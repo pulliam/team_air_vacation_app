@@ -2,7 +2,7 @@ class BookingsController < ApplicationController
 
   def create
   	Booking.create(booking_params)
-  	redirect_to listings_path #NEED HELP HERE
+   redirect_to listings_path #NEED HELP HERE
   end
 
  private

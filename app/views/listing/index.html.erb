@@ -1,0 +1,22 @@
+<header>
+  <a href="/"> Go Back </a>
+  <h2 class="neighborhood-title"> <%= @neighborhood.name %></h2>
+</header>
+
+<% @listings.each do |listing| %>
+  <div class="listing">
+    <%= image_tag listing.photo_url %>
+    <h3> <%= listing.address %> </h3>
+    <p> <%= listing.description %></p>
+    <h3 class="price"> $ <%= listing.price %></h3>
+    <% if listing.available == "true" %>
+      <div class="availability available">
+          <span> Available </span> 
+      </div>
+    <% else %>
+      <div class="availability booked">
+          <span> Booked </span> 
+      </div>
+    <% end %>
+  </div>
+<% end %>

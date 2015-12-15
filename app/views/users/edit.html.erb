@@ -1,6 +1,6 @@
 <h1>Edit your account!</h1>
 
-<%= form_tag '/users/<% @user.id %>' do %>
+<%= form_tag '/users/<%= @user.id %>' do %>
   <%= text_field_tag :email %>
   <%= password_field_tag :password %>
   <%= password_field_tag :password_confirmation %>
@@ -8,3 +8,6 @@
   <%= text_field_tag :bio %>
   <%= submit_tag %>
 <% end %>
+
+<p><a href="/users/<%= @user.id %>">Back</a></p>
+<p><a href="/">Home</a></p>

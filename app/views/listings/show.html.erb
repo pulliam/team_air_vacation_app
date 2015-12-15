@@ -1,0 +1,18 @@
+
+<%= image_tag @listing.photo_url %>
+
+<h1> <%= @listing.address %> </h1>
+
+<p> <%= @listing.description %> </p>  <span> <%= @listing.price %> </span>
+
+<br><br>
+
+<!-- Create Booking -->
+<%= form_for @booking, url: {action: “create”} do |f| %>
+	<%= f.hidden_field :guest_id, :value => @guest %>
+	<%= f.hidden_field :listing_id, :value => @listing.id %>
+    <%= f.submit "Make a Booking Reservation" %>
+<% end %>
+
+
+

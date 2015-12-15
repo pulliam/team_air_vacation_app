@@ -1,5 +1,0 @@
-<%= form_for(@booking) do |f| %>
-	<%= f.hidden_field :guest_id, :value => @guest %>
-	<%= f.hidden_field :listing_id, :value => @listing_of_new_booking.id %>
-    <%= f.submit "Are you sure you want to book this?" %>
-<% end %>

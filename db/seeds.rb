@@ -13,4 +13,4 @@
 
     review = Review.create({ title: 'Can you tell me how to get to Sesame Street?', body: 'YAAAAAAAAAAAAAAAAAAY'})
 
-    booking = Booking.create 
+    booking = Booking.create

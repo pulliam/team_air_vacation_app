@@ -1,0 +1,16 @@
+<div class="reviews-index">
+  <h1>All Reviews of <%= @listing.address %> </h1>
+  <ul>
+    <% reviews.each do |review| %>
+      <li>
+        <%= review.title %>
+        <br>
+        <%= review.body %>
+        <br>
+        By: <%= review.guest.email %> 
+        <br>
+        On: <%= review.created_at %>
+      </li>
+    <% end %>
+  </ul>
+</div>

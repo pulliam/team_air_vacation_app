@@ -1,0 +1,11 @@
+<img src="<%= @user.img_url %>">
+<p><%= @user.email %></p>
+<p><%= @user.bio %></p>
+
+<% if current_user.id == @user.id %>
+  <%= form_for @user, url: user_path(@user), html: {method: "edit"} do |f| %>
+    <%=f.submit "Edit Your Profile" %>
+  <% end %>
+<% end %>
+
+<p><a href="/">Home</a></p>

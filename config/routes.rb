@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  get 'welcome/index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -22,6 +24,8 @@ Rails.application.routes.draw do
   resources :listings do
     resources :reviews
   end
+
+  resources :bookings
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

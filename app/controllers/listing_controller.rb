@@ -7,6 +7,7 @@ class ListingController < ApplicationController
 
   def show 
     @listings = Listing.find(params[:id])
+    @neighborhood = Neighborhood.where(:id => @listings.neighborhood_id)
   end
 
 end

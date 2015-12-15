@@ -26,3 +26,30 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+##User Stories (MVP):
+a user can sign up with their email, password, password confirmation
+a user can login
+a logged-in user can update their profile to include a picture and a short bio
+a user can create a listing
+a listing can have a photo, an address, a neighborhood, a price per night, and a description
+a user can edit their own listings
+a user can write their bio and listing descriptions in markdown
+a user can't edit other users' listings
+a user can search by neighborhood
+a user can book a listing if it's available
+after a user's stay they can write a review of their experience
+
+##User Stories (Bonus):
+when a user searches by neighborhood they can sort by price
+when a user requests to book a listing, it remains "pending" until the owner approves or disaproves
+when a user requests to book a listing, it remains "pending" until the owner approves or disaproves
+a user can not see a location's exact address until their booking is confirmed
+the owner of a listing can view pending bookings
+a user can see a list of proposed bookings and confirm or deny them
+a user can see upcoming bookings separated from old bookings
+a user can view a history of their bookings, both confirmed and denied
+after a user's stay, the owner of that listing can write a review about the guest
+when a user views a listing they can see the weather for that location
+
+

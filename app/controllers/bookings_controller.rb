@@ -1,22 +1,8 @@
 class BookingsController < ApplicationController
-  
-  # def index
-  # 	@bookings = Booking.all
-  # end
-
-  # def show
-  # 	@booking = Booking.find(params[:id])
-  # end
-
-  def new 
-  	@booking = Booking.new
-  	@listing_of_new_booking = Listing.find(params[:id])
-	@guest = session[:user_id]
-  end
 
   def create
   	Booking.create(booking_params)
-  	redirect_to users_path
+  	redirect_to listings_path #NEED HELP HERE
   end
 
  private

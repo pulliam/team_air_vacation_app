@@ -8,7 +8,7 @@ class CreateListings < ActiveRecord::Migration
       t.string :availability
       t.references :neighborhood
       t.references :host, references: :users
-       t.timestamps null: false
+      t.timestamps null: false
     end
   end
 end

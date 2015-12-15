@@ -9,6 +9,10 @@ class ListingsController < ApplicationController
     @listing = Listing.find(params[:id])
     @neighborhood = Neighborhood.where(:id => @listings.neighborhood_id)
     @reviews = Review.where(listing_id: params[:id])
+
+    #For the new Booking form:
+    @booking = Booking.new
+	@guest = session[:user_id]
   end
 
 end

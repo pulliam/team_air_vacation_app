@@ -23,6 +23,8 @@ Rails.application.routes.draw do
     resources :reviews
   end
 
+  resources :bookings
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

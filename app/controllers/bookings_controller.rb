@@ -1,4 +1,4 @@
-class BookingsController < ActionController::Base
+class BookingsController < ApplicationController
   
   # def index
   # 	@bookings = Booking.all
@@ -11,7 +11,7 @@ class BookingsController < ActionController::Base
   def new 
   	@booking = Booking.new
   	@listing_of_new_booking = Listing.find(params[:id])
-	@guest = @listing_of_new_booking.guest_id
+	@guest = session[:user_id]
   end
 
   def create

@@ -1,4 +1,4 @@
-class ListingController < ApplicationController
+class ListingsController < ApplicationController
 
   def index  
     @neighborhood = Neighborhood.find(params[:id])
